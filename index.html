@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading-text">To Do List</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="add-items-text">
+          <h2>Add Your To Do Tasks</h2>
+        </div>
+        <div class="form-and-items-container">
+          <div class="form--container">
+            <form>
+              <input
+                autocomplete="off"
+                type="text"
+                name="text-input"
+                id="form-container__input"
+                placeholder="Type Here:"
+              />
+              <button type="submit" id="form--container__btn">Add Item</button>
+            </form>
+          </div>
+          <div class="to-do-items-container">
+            <div class="items--list" id="list"></div>
+          </div>
+          <span
+            >To Do List by <i>Bartosz Buko</i> <i class="year"></i> &copy; All
+            Rights Reserved</span
+          >
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/feb09a26ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
