@@ -26,8 +26,11 @@ submitBtn.addEventListener("click", (e) => {
     // });
   } else {
     input.value = "Value cannot be empty!";
-
+    submitBtn.disabled = true;
+    input.disabled = true;
     setTimeout(() => {
+      input.disabled = false;
+      submitBtn.disabled = false;
       input.value = "";
     }, 1500);
   }

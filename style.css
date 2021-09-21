@@ -114,7 +114,6 @@ form {
   background: rgba(0, 0, 0, 0.2);
   padding: 1em;
   font-size: clamp(1rem, 1vw, 2rem);
-  text-transform: capitalize;
   text-align: center;
   color: var(--clr-primary);
 
@@ -183,7 +182,7 @@ form {
   background: var(--bcg-accent);
   width: calc(100% + 4em);
   max-width: 60rem;
-  padding: 0.5em 0 0.5em 3em;
+  padding: 0.5em 0 0.5em clamp(1em, 5vw, 3em);
   color: var(--clr-primary);
   font-size: clamp(1rem, 1.2vw, 2.2rem);
 }
@@ -200,9 +199,28 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 1em 0 0;
+  padding: 0 0.7em 0 0;
   margin: 0.6em 0;
   font-size: clamp(1.4rem, 1.4vw, 4rem);
+  font-weight: 300;
+}
+
+.items--list__item > p {
+  position: relative;
+}
+.items--list__item > p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.3em;
+  width: 100%;
+  height: 2px;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  background: var(--clr-accent);
 }
 
 .items--list__fa {
